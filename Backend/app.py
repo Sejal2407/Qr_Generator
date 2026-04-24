@@ -14,7 +14,7 @@ def home():
 @app.route('/api/generate',methods=['POST'])
 def generate_qr():
     data = request.json      #getting json sent from React
-    link = data.get('link','')
+    link = data.get('url','')
     fillColor = data.get('fill_color','black')
     backColor = data.get('back_color','white')
     boxSize = int(data.get('box_size', 10))
