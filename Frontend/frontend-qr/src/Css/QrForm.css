@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background-color : #131313;
+}
+
+.QrForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form {
+    background: #ffffff;
+    border: 1px solid #e4e2dc;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    width: 520px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1.8rem;
+    letter-spacing: -0.3px;
+}
+
+.eachField {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 1.2rem;
+}
+
+.eachField label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b6b6b;
+    letter-spacing: 0.2px;
+}
+
+.eachField input[type="text"],
+.eachField input[type="number"] {
+    padding: 10px 14px;
+    border: 1px solid #e0deda;
+    border-radius: 10px;
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    color: #1a1a1a;
+    background: #faf9f7;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    text-align:center;
+}
+
+.eachField input[type="text"]:focus,
+.eachField input[type="number"]:focus {
+    border-color: #a78bfa;
+    background: #ffffff;
+}
+
+.eachField input[type="color"] {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #e0deda;
+    border-radius: 10px;
+    padding: 4px 6px;
+    background: #faf9f7;
+    cursor: pointer;
+    outline: none;
+}
+
+.eachField input[type="color"]:hover {
+    border-color: #a78bfa;
+}
+
+.eachField select {
+    padding: 10px 14px;
+    border: 1px solid #e0deda;
+    border-radius: 10px;
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    color: #1a1a1a;
+    background: #faf9f7;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    transition: border-color 0.2s;
+}
+
+.eachField select:focus {
+    border-color: #a78bfa;
+    background: #ffffff;
+}
+
+form button {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 12px;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+form button:hover {
+    background: #333333;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+.qr-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e4e2dc;
+}
+
+.qr-result img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    border: 1px solid #e4e2dc;
+}
+
+.qr-result a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b6b6b;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid #e0deda;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.qr-result a:hover {
+    background: #1a1a1a;
+    color: #ffffff;
+    border-color: #1a1a1a;
+}
