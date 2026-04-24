@@ -7,6 +7,10 @@ import io
 app = Flask(__name__)
 CORS(app) #allows React to talk to Flask
 
+@app.route('/')
+def home():
+    return "Backend is running!"
+
 @app.route('/api/generate',methods=['POST'])
 def generate_qr():
     data = request.json      #getting json sent from React
